@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.thebusyteam.nokatiraq.Text"
+    android:background="#004d40"
+    android:id="@+id/lay_relative"
+    >
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/adView"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+
+            android:padding="12dp"
+            android:id="@+id/linearLayout7">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+                <TableRow>
+                    <LinearLayout
+                        android:id="@+id/content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:id="@+id/scrollView3"
+
+                            android:background="#00695c">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView"
+                                android:text="اهلا بكم."
+                                android:textColor="#ffffffff"
+                                android:gravity="center"
+                                android:padding="12dp"
+                                android:minHeight="190dp"
+                                android:textStyle="bold"
+                                android:textSize="20sp" />
+
+                        </ScrollView>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="#55000000"/>
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#55000000"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/img_random"
+            android:layout_below="@+id/linearLayout7"
+            android:layout_above="@+id/lay_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00695c"
+            android:id="@+id/lay_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3" android:layout_x="107dp" android:layout_y="446dp"
+                android:layout_alignTop="@+id/imageButton" android:layout_alignParentLeft="true"
+                android:background="@mipmap/forward2"
+                android:layout_weight=".3"
+                android:layout_marginLeft="50dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton" android:layout_x="172dp" android:layout_y="443dp"
+                android:layout_alignTop="@+id/imageButton2" android:layout_centerHorizontal="true"
+                android:background="@mipmap/share"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_weight=".3" />
+
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageButton2"
+                android:layout_x="258dp" android:layout_y="439dp"
+                android:background="@mipmap/forward"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight=".3"
+                android:layout_marginRight="50dp" />
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/lay_btn"
+            android:layout_alignLeft="@+id/img_random"
+            android:layout_alignStart="@+id/img_random"
+            android:background="@drawable/play"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:id="@+id/table"
+            android:layout_marginLeft="80dp"></TableRow>
+
+    </RelativeLayout>
+
+</RelativeLayout>

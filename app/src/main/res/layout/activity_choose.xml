@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.thebusyteam.nokatiraq.Choose"
+    android:background="#004d40">
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginBottom="21dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginLeft="21dp"
+                android:clickable="true"
+                android:id="@+id/ch1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:background="@mipmap/t" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/text"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:layout_marginLeft="72dp"
+                    android:layout_weight=".16" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="21dp"
+                android:clickable="true"
+                android:id="@+id/ch2"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:background="@mipmap/i" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/images"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="0.16" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="21dp"
+                android:clickable="true"
+                android:id="@+id/ch3"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:background="@mipmap/r" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/imageMesg"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:layout_marginLeft="72dp"
+                    android:layout_weight=".16" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.thebusyteam.nokatiraq.app"
+    android:background="#004d40">
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:weightSum="1"
+        android:layout_marginTop="96dp"
+        android:clickable="true"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:id="@+id/imageView4"
+            android:background="@mipmap/tak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/takbirat"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.28"
+            android:textSize="12sp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:weightSum="1"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:id="@+id/imageView5"
+            android:background="@mipmap/rsa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="تطبيق رسائل العيد"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.28"
+            android:textSize="12sp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:weightSum="1"
+        android:layout_marginTop="42dp"
+        android:clickable="true"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:id="@+id/imageView6"
+            android:background="@mipmap/nkt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="تطبيق نكت مصرية"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.28"
+            android:textSize="12sp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

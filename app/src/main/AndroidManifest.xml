@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.thebusyteam.nokatiraq">
+
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".Text2"
+            android:label="@string/title_activity_images"
+            android:parentActivityName=".Choose">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choose" />
+        </activity>
+        <activity
+            android:name=".TextCollection"
+            android:label="@string/title_activity_image_mesg"
+            android:parentActivityName=".Choose">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choose" />
+        </activity>
+        <activity
+            android:name=".Choose"
+            android:label="@string/title_activity_choose"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Text"
+            android:label="@string/title_activity_text"
+            android:parentActivityName=".Choose">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choose" />
+        </activity>
+        <activity
+            android:name=".Apps"
+            android:label="@string/title_activity_apps"></activity>
+        <activity
+            android:name=".about"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thebusyteam.nokatiraq.MainActivity" />
+        </activity>
+        <activity
+            android:name=".app"
+            android:label="@string/title_activity_app"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thebusyteam.nokatiraq.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MyDialogue"
+            android:label="@string/title_activity_my_dialogue"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"></activity>
+        <activity
+            android:name=".MyDialogue2"
+            android:label="@string/title_activity_my_dialogue"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"></activity>
+        <activity
+            android:name=".MyDialogue3"
+            android:label="@string/title_activity_my_dialogue"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"></activity>
+    </application>
+
+</manifest>
